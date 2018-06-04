@@ -1,0 +1,228 @@
+*{
+	margin:0;padding: 0;
+	list-style: none;
+}
+.db{display: block;}
+.fl{float: left}
+.fr{float:right;}
+.section:nth-child(1){
+	background: url(../img/3.jpg) no-repeat center center/cover;
+	background: #1bbc9b;
+}
+.section1 .ul{
+	width: 400px;
+	font-size: 20px;
+	line-height: 50px;
+	color: #fff;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.voder_one{
+	position: absolute;
+	right:50px;
+	top:50px;
+}
+.me_photo{
+	height: 100%;
+}
+.section1 video{
+	position: absolute;
+	right: 0;
+	top: 60px;
+	height: 320px;
+	width: 556px;
+}
+.section1 .title_one{
+	position: absolute;
+	right: 70px;
+	bottom: 50px;
+	height: 40%;
+	z-index: 9;
+	font-size: 34px;
+	font-family: 楷体;
+	color: #1BBC9B;
+	text-align: right;
+	height: 130px;
+	line-height: 50px;
+}
+.section2 .top{
+	overflow: hidden;
+	position: absolute;
+	left:0;
+	top:0;
+	width: 50%;
+	height: 50%;
+	background: url(../img/he2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.section2 .bottom{
+	overflow: hidden;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	background: url(../img/4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.section2 .right{
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 50%;
+	height: 100%;
+	background: #000;
+	background-size: cover;
+}
+.section2 .right video{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;	
+}
+.hover{
+	position: absolute;
+	left:100%;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	z-index: 5;
+	transition: left 0.3s;
+}
+.section2 .fp-tableCell>div:hover .hover{
+	left:0;
+}
+
+.hover ul{	
+	font-size:24px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+box-sizing: border-box;
+}
+.rit_ul{
+	font-size: 26px!important;
+	padding-top: 200px;
+	box-sizing: border-box;
+}
+.border_ul{
+	font-size: 22px!important ;
+	padding: 25px 30px;
+}
+.border_ul li:nth-child(2n){
+	text-align: right!important;	
+	color: #75fffa;
+}
+.border_ul li:nth-child(2n-1){
+	text-align: left!important;
+}
+/*3*/
+.section3 ul{
+	font-size: 20px;
+	line-height: 38px;
+	color: #fff;
+	padding: 30px;
+	margin-left: 550px;
+	box-sizing: border-box;
+}
+.section3 ul li{
+	margin-bottom: 20px;
+}
+.section3 .slide2 .left{
+	width: 450px;
+	height: 100%;
+}
+.section3 .slide2 .left img{	
+	height: 100%;
+	display: block;
+}
+.fp-prev{
+	left:30px!important;
+}
+.fp-next{
+	right:30px!important;
+}
+/*4*/
+.section4 .fp-tableCell>div{
+	width: 33%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+
+}
+.section4 .fp-tableCell>div div{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.section4 ul{
+width: 100%;	
+	font-size:20px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+
+}
+.hide{display: none;}
+.video4{width: 100%;height: 100%;}
+/*5*/
+.section5 .right{
+	overflow: hidden;
+	position: absolute;
+	right:0;
+	top:0;
+	width: 70%;
+	height: 100%;
+	background:url(../img/3.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.section5 .left{
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 30%;
+	height: 100%;
+	background: #000;
+	background-size: cover;
+}
+.section5 .left video{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;	
+}
+.section5 .fp-tableCell>div:hover .hover{
+	left:0;
+}
+.section5 .left ul{
+	line-height: 40px;
+	font-size: 20px;
+}
+.section5 .hover{
+	line-height: 40px;
+	font-size: 20px;
+	color: #fff;
+	
+}
+.section5 .hover div{	
+	width: 50%;
+	box-sizing: border-box;
+	height: 100%;
+	padding:20px 30px;
+}
+@media screen and (max-width: 1440px) {
+    .section1 video {
+	    height: 240px;
+	    width: 417px;
+	}
+}
