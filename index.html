@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+     <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="廉晓飞">
+    <meta name="author" content="廉晓飞">
+    <meta name="description" content="廉晓飞的个人站">
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
@@ -13,6 +18,9 @@
     <title>致自己</title>  
 </head>
 <body>
+    <div class="mask">
+        <img src="img/my.jpg" alt="">
+    </div>
     <div id="dowebok">
         <div class="section section1">
             <img src="img/me.jpg" class="me_photo db fl">
@@ -268,8 +276,14 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.js"></script>
 <script>
+    var deg=0,t;
+    t=setInterval(function(){
+        deg+=360
+        $('.mask img').css('transform','rotate('+deg+'deg)');
+    },2000)
 $(function(){
-
+    $('.mask').remove();
+    clearInterval(t);
     $('#dowebok').fullpage({
         sectionsColor: ['#220402', '#4BBFC3', '#000', '#000','#000'],//7BAABE f90
         anchors: ['page1', 'page2', 'page3', 'page4'],
