@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="mask">
-        <img src="img/my.jpg" alt="">
+        <img src="img/my.gif" alt="">
     </div>
     <div id="dowebok">
         <div class="section section1">
@@ -213,7 +213,7 @@
         </div>
         <div class="section section5">
             <div class="left">
-                <video class="voder_one"  autoplay="autoplay">
+                <video class="voder_one last_v"  autoplay="autoplay">
                   <source src="img/6.mp4" type="video/mp4" />
                 </video>
                 <div class="hover">
@@ -279,14 +279,13 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.js"></script>
 <script>
-    var deg=0,t;
-    t=setInterval(function(){
-        deg+=360
-        $('.mask img').css('transform','rotate('+deg+'deg)');
-    },2000)
+     
+ 
+    $('.last_v')[0].addEventListener('canplaythrough',function(){
+        $('.mask').remove();  
+    });
 $(function(){
-    $('.mask').remove();
-    clearInterval(t);
+     
     $('#dowebok').fullpage({
         sectionsColor: ['#220402', '#4BBFC3', '#000', '#000','#000'],//7BAABE f90
         anchors: ['page1', 'page2', 'page3', 'page4'],
