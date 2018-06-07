@@ -280,11 +280,9 @@
 <script src="js/jquery.fullPage.js"></script>
 <script>
 $('img:nth-child(1)').on('load', function() {
-     $('.mask').remove(); 
+    $('.mask').remove(); 
 });
-
-$(function(){
-     
+$(function(){     
     $('#dowebok').fullpage({
         sectionsColor: ['#220402', '#4BBFC3', '#000', '#000','#000'],//7BAABE f90
         anchors: ['page1', 'page2', 'page3', 'page4'],
@@ -307,15 +305,7 @@ $(function(){
             if(index == 5){
                $("video")[4].play();
             }           
-        },
-      
+        }      
     });
-  
-    setInterval(function(){
-
-    },500)
-    
-     
-   
 });
 </script>
