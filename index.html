@@ -279,9 +279,9 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.js"></script>
 <script>
-$('img:nth-child(1)').on('load', function() {
+setTimeout(function(){
     $('.mask').remove(); 
-});
+},2500)
 $(function(){     
     $('#dowebok').fullpage({
         sectionsColor: ['#220402', '#4BBFC3', '#000', '#000','#000'],//7BAABE f90
