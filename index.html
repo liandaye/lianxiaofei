@@ -98,7 +98,7 @@
                 <video class="voder_three fl left"  autoplay="autoplay" loop="loop">
                   <source src="img/5.mp4" type="video/mp4" />
                 </video>
-                <ul class="" style="color: #e5f5dc;padding-top:75px;">
+                <ul class="" style="padding-top:75px;">
                     <li>领证前他对她说: </li>
                     <li>我以后要得了绝症就和你离婚，绝不拖累你，</li>
                     <li>她不高兴的说:“呸！”</li>
@@ -130,7 +130,7 @@
             </div>
             <div class="slide slide2">    
                 <img src="img/he1_2.jpg" style="width: 500px;margin-left: 20px;" class="fl">
-                <ul class="" style="color: #75fffa">         
+                <ul class="" style="">         
                     <li>宫崎骏说：你住的城市下雨了，很想问你有没有带伞 </li>
                     <li>可是我忍住了，因为我怕你说你没带，而我又无能为力</li>
                     <li>就像是我爱你，却给不到你想要的陪伴</li>
@@ -278,11 +278,11 @@ setTimeout(function(){
 },2500)
 $(function(){     
     $('#dowebok').fullpage({
-        sectionsColor: ['#220402', '#4BBFC3', '#000', '#000','#000'],//7BAABE f90
+        sectionsColor: ['#220402', '#4BBFC3', '#f4f9e9', '#000','#000'],//7BAABE f90
         anchors: ['page1', 'page2', 'page3', 'page4'],
         navigation: true,
         loopHorizontal:true,
-        controlArrowColor:'rgba(255,255,255,0.5)',
+        controlArrowColor:'#fff',
         afterLoad: function(anchorLink, index){
             if(index == 1){
                $("video")[0].play();
